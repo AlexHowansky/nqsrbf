@@ -1,0 +1,3 @@
+#!/usr/bin/perl -n
+s/(([+-<>])\2{2,})/sprintf('%x',length($1)).$2/ge;
+print;
